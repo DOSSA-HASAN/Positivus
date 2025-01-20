@@ -63,6 +63,16 @@ function Services() {
                 ))}
             </article>
 
+            <article className='proposal-container'>
+                    <main>
+                        <h2>Let’s make things happen</h2>
+                        <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+                        <button>Get your free proposal</button>
+                    </main>
+
+                    <figure className='proposal-image'></figure>
+            </article>
+
         </section>
     )
 }

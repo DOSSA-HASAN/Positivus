@@ -104,13 +104,64 @@
     color: #fff;
 }
 
+.proposal-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: light-dark(#F3F3F3, #3e3c3c);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.proposal-container > main > p{
+    width: 50%;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.proposal-container > main > button{
+    background-color: #191A23;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.proposal-container > main > button:hover{
+    cursor: pointer;
+}
+
+.proposal-image{
+    width: 50%;
+    height: 300px;
+    background-image: url("/quote.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+}
+
+@media (prefers-color-scheme: dark){
+    .proposal-image{
+        background-image: url("/quote-d.png");
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .services-container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
+
+    .title-banner{
+        flex-direction: column;
+    }
+
     .learn-more > p{
         display: none;
     }
@@ -121,7 +172,7 @@
 
     .service{
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 
     .right-image{
@@ -132,5 +183,23 @@
     .service-text > span{
         font-size: 16px;
         font-weight: 500;
+    }
+
+    .proposal-container{
+        text-align: center;
+    }
+
+    .proposal-container > main > p{
+        width: 100%;
+    }
+
+    .proposal-image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .service{
+        width: 90%;
     }
 }
