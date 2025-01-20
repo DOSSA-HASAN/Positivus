@@ -1,8 +1,10 @@
 import React from 'react'
 import "./hero.css"
+import Banner from '../banner/Banner'
 
 function Hero() {
     return (
+        <>
         <section>
             <article className='hero-text'> 
                 <h1>Navigating the digital landscape for success</h1>
@@ -14,6 +16,10 @@ function Hero() {
             <figure className="hero-image">
             </figure>
         </section>
+        
+        <Banner />
+
+        </>
     )
 }
 

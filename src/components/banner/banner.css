@@ -1,0 +1,20 @@
+:root{
+    color-scheme: light dark;
+}
+
+.company-logo{
+    filter: grayscale(100%);
+    margin: 0 40px;
+}
+
+@media (prefers-color-scheme: dark){
+    .company-logo{
+        filter: drop-shadow(4px 4px 10px white);
+    }
+}
+
+@media screen and (max-width: 425px){
+    .company-logo{
+        width: 100px;
+    }
+}
