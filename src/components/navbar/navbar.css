@@ -7,7 +7,17 @@
     --dark-theme: url('/star-l.png');
 }
 
-.navbar {
+.mobile-menu{
+    display: none;
+}
+
+.m-auto{
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.laptop-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +71,7 @@
 .links-container a button:hover {
     transition: all 0.2s ease-in;
     background-color: #b9ff66;
+    border: 1px solid black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,4 +88,60 @@
         color: black;
     }
     
+}
+
+@media screen and (max-width: 1024px) {
+
+    .laptop-menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px;
+        position: relative;
+    }
+
+    .mobile-menu .fa-solid{
+        font-size: 25px;
+    }
+
+    .links-container{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: -200px;
+        top: 0px;
+        height: 100vh;
+        width: 200px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+        overflow-y: scroll;
+    }
+    
+    .show-mobile-link{
+        right: 0;
+    }
+
+    .close-menu-button{
+        color: #000;
+        width: 100%;
+        display: flex;
+        padding: 10px 30px;
+        align-items: flex-end;
+        justify-content: end;
+    }
+    
+    .mobile-menu > .links-container > a{
+        margin: 20px 0;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .mobile-menu > .links-container > a:hover{
+        color: hsl(0, 0%, 0%, 0.5);
+    }
 }
