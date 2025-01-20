@@ -1,0 +1,80 @@
+:root {
+    color-scheme: light dark;
+}
+
+:root {
+    --light-theme: url('/star-b.png');
+    --dark-theme: url('/star-l.png');
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: light-dark(#fff, #000);
+    color: light-dark(#000, #fff);
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    background-image: var(--light-theme);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin-right: 20px;
+}
+
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container a {
+    color: light-dark(#000, #fff);
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 1rem;
+}
+
+.links-container a:hover {
+    color: hsl(0, 0%, 0%, 0.5);
+}
+
+.links-container a button {
+    background-color: light-dark(#fff, #000);
+    border: 1px solid light-dark(#000, #fff);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.links-container a button:hover {
+    transition: all 0.2s ease-in;
+    background-color: #b9ff66;
+}
+
+@media (prefers-color-scheme: dark) {
+    .image {
+        background-image: var(--dark-theme);
+    }
+
+
+    .links-container a:hover {
+        color: hsla(0, 0%, 100%, 0.5);
+    }
+
+    .links-container a button:hover {
+        color: black;
+    }
+    
+}

@@ -1,0 +1,54 @@
+@use "../../responsive.scss";
+
+@function light-dark($light, $dark) {
+    @if (color-scheme =='dark') {
+        @return $dark;
+    }
+
+    @else {
+        @return $light;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: light-dark(#fff, #0000ff);
+    color: light-dark(#000, #fff);
+    padding: 20px;
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .image {
+            background-image: light-dark(url('/star-b.png'), url('/star-l.png'));
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            margin-right: 20px;
+        }
+    }
+
+    .links-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: light-dark(#000, #fff);
+
+            button {
+                background-color: light-dark(#fff, #000);
+                border: 1px solid light-dark(#000, #fff);
+                padding: 20px 10px;
+            }
+        }
+
+    }
+}
