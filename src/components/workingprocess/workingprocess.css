@@ -23,6 +23,7 @@
     border: 1px solid light-dark(#000, #fff);
     width: 100%;
     transition: all 0.2s ease-in;
+    box-shadow: 2px 4px 2px #000;
 }
 
 .bg-green{
