@@ -41,7 +41,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    background-color: #F3F3F3;
+    background-color: light-dark(#F3F3F3, #d6d4d4);
     border-radius: 10px;
     padding: 20px;
     height: 100%;
@@ -160,6 +160,14 @@
 
     .title-banner{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-banner > p {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
     }
 
     .learn-more > p{
