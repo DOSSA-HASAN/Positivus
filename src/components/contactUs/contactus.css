@@ -1,0 +1,118 @@
+.contact-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: light-dark(#F3F3F3, #191A23);
+    border-radius: 20px;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.contact-us-form>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.contact-us-form>form > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-us-form>form > span > input{
+    background-color: light-dark(#000, #fff);
+    border: 1px solid #000;
+    padding: 20px;
+    color: light-dark(#fff, #000);
+    margin-top: 10px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.contact-us-form > form > button{
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    background-color: light-dark(#191A23, #B9FF66);
+    color: light-dark(#fff, #000);
+}
+
+.radio-button-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-button-cont>span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: light-dark(#fff, #000);
+    border: 2px solid light-dark(#000, #fff);
+}
+
+input[type="radio"]:checked {
+    background-color: #B9FF66;
+}
+
+.contact-us-image-cont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -50%;
+    background-image: url("contact-form.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (prefers-color-scheme: dark){
+    .contact-us-image-cont{
+        background-image: url("contact-form-d.png");
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-us-form>form{
+        align-items: center;
+    }
+
+    .contact-us-form > form > span {
+        width: 100%;
+    }
+    
+    .contact-us-form>form > span > input, .contact-us-form>form > button{
+        width: 100%;
+    }
+
+    .contact-us-image-cont{
+        display: none;
+        width: 0;
+    }
+}

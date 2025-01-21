@@ -1,0 +1,82 @@
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.team-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px 0;
+}
+
+.person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: light-dark(#191A23, #fff);
+    color: light-dark(#fff, #000);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.person>.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid light-dark(#fff, #191A23);
+}
+
+.person>.top>.person-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person>.top>.person-info>span>.name {
+    font-weight: 500;
+}
+
+.person>.top>.person-info>span>.role {
+    font-weight: 300;
+}
+
+.person>.top>.person-info>figure {
+    width: 90px;
+    margin-right: 30px;
+}
+
+.person>.top>.person-info>figure>img {
+    width: 100%;
+}
+
+.linkedIn-logo {
+    width: 30px;
+    border: 1px solid light-dark(#fff, #191A23);
+    border-radius: 50%;
+}
+
+.linkedIn-logo>img {
+    width: 100%;
+}
+
+.person>.bottom {
+    padding-top: 20px;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .team-cont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .team-cont {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
