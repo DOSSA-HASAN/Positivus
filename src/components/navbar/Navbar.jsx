@@ -32,7 +32,7 @@ function Navbar() {
                     <div onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <i className="fa-solid fa-bars"></i>
                     </div>
-                    <article className={isMenuOpen ? "links-container show-mobile-link" : "links-container"}>
+                    <article className={isMenuOpen ? "links-container" : "mobile-menu-hide"}>
                         <div className="close-menu-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <i className="fa-solid fa-xmark"></i> 
                         </div>

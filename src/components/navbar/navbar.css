@@ -96,6 +96,20 @@
         display: none;
     }
 
+    .mobile-menu-hide{
+        display: none;
+    }
+
+    @keyframes increaseWidth {
+        from {
+            width: 0px;
+        }
+        
+        to{
+            width: 200px;
+        }
+    }
+
     .mobile-menu{
         display: flex;
         justify-content: space-between;
@@ -113,18 +127,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        right: -300px;
+        right: 0;
         top: 0px;
         height: 100vh;
+        animation: increaseWidth 0.3s ease-in;
         width: 200px;
         background-color: light-dark(#000, #fff);
         transition: all 0.3s ease-in-out;
         overflow-y: scroll;
         border-radius: 0 0 0 10px;
-    }
-    
-    .show-mobile-link{
-        right: 0;
     }
 
     .close-menu-button{
