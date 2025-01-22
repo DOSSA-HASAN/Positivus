@@ -3,6 +3,7 @@ footer{
     background-color: light-dark(#000,#191A23);
     border-radius: 10px;
     color: #fff;
+    border: 1px solid;
 }
 
 .footer-head{
@@ -129,6 +130,9 @@ footer{
 }
 
 @media screen and (max-width: 800px) {
+    footer{
+        padding-top: 30px;
+    }
     .footer-head{
         flex-direction: column;
     }
