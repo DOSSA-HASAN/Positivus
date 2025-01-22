@@ -2,14 +2,6 @@
     color-scheme: light dark;
 }
 
-*{
-    /* border: 1px dotted blue; */
-}
-
-body{
-    /* border: 1px solid red; */
-}
-
 .services-section{
     display: flex;
     flex-direction: column;
@@ -54,7 +46,7 @@ body{
     padding: 20px;
     height: 100%;
     transition: all 0.2s ease-in-out;
-    box-shadow: 1px 5px 1px light-dark(#000, #939191);
+    /* box-shadow: 1px 5px 1px light-dark(#000, #939191); */
     border: 1px solid light-dark(#000, #fff);
 }
 
@@ -162,7 +154,7 @@ body{
     .services-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .right-image{
         width: 40%;
     }
@@ -220,6 +212,7 @@ body{
 
 @media screen and (max-width: 325px) {
     .service{
-        width: 90%;
+        width: 100%;
+        overflow: hidden;
     }
 }
