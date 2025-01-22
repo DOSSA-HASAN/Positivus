@@ -1,6 +1,6 @@
 footer{
     padding: 1% 1.5%;
-    background-color: light-dark(#000,#3b3b3b);
+    background-color: light-dark(#000,#191A23);
     border-radius: 10px;
     color: #fff;
 }
@@ -84,7 +84,7 @@ footer{
 }
 
 .footer-right{
-    background-color: #191A23;
+    background-color: #000;
     padding: 50px;
     border-radius: 10px;
     display: flex;
