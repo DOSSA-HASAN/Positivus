@@ -184,11 +184,12 @@
 
     .service{
         align-items: center;
+        overflow: hidden;
         width: 100%;
     }
 
     .right-image{
-        width: 140px;
+        width: 40%;
         padding: 20px;
     }
 
@@ -207,12 +208,5 @@
 
     .proposal-image{
         display: none;
-    }
-}
-
-@media screen and (max-width: 325px) {
-    .service{
-        width: 100%;
-        overflow: hidden;
     }
 }
